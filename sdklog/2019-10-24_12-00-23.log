@@ -1,0 +1,21 @@
+Begin Time:2019-10-24 12:00:23.740
+[2019-10-24 12:00:23.740][P:4136/T:2664][AVNetSDKMgr.cpp:358][Info][0] Load avnetsdk library dynamically
+[2019-10-24 12:00:23.745][P:4136/T:2664][AVNetSDKMgr.cpp:382][Info][0] avnetsdk module handle: 000000002D6C0000
+
+[2019-10-24 12:00:23.745][P:4136/T:2664][AVNetSDKMgr.cpp:702][Info][0] Load configsdk dynamically
+[2019-10-24 12:00:23.778][P:4136/T:2664][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000002200050, dwUser=0000000000000000].
+[2019-10-24 12:00:23.778][P:4136/T:2664][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-10-24 12:00:23.778][P:4136/T:2664][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-10-24 12:00:23.778][P:4136/T:2664][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-10-24 12:00:23.779][P:4136/T:2664][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-10-24 12:00:23.779][P:4136/T:2664][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-10-24 12:00:23.779][P:4136/T:2664][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.208, port=37777, SpeCap=0, lpDeviceInfo=0000000023E7EE70.]
+[2019-10-24 12:00:27.172][P:4136/T:2672][dhnetsdk.cpp:132][Info][0] Enter CLIENT_InitEx:[cbDisConnect=0000000002200010, dwUser=0000000000000000, lpInitParam=0000000000000000].
+[2019-10-24 12:00:27.172][P:4136/T:2672][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 000000002D6C0000
+
+[2019-10-24 12:00:27.172][P:4136/T:2672][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-10-24 12:00:27.172][P:4136/T:2672][dhnetsdk.cpp:132][Info][0] Enter CLIENT_InitEx:[cbDisConnect=0000000002200010, dwUser=0000000000000000, lpInitParam=0000000000000000].
+[2019-10-24 12:00:27.172][P:4136/T:2672][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 000000002D6C0000
+
+[2019-10-24 12:00:27.172][P:4136/T:2672][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-10-24 12:00:27.172][P:4136/T:2672][Manager.cpp:12322][Info][0] -------------------Log file reset, new log file:E:\space\work\zhgd\hyzhgd\.\sdklog\2019-10-24_12-00-27.log-log number:10-log size:10240------------------

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0,uc-fitscreen=yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>实时监控</title>
+		<meta name="keywords" content="zhgd" />
+		<meta name="description" content="" />
+		<!-- miniMObile.css、js -->
+		<link rel="stylesheet" type="text/css" href="css/miniMobile.css"/>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/miniMobile.js"></script>
+		<!-- fonticon -->
+		<link rel="stylesheet" type="text/css" href="plugins/fonticon/iconfont.css" />
+		<!-- layer -->
+		<script type="text/javascript" src="plugins/layer_mobile/layer.js"></script>
+		<!-- animate.css -->
+		<!-- swiper -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	</head>
+
+	<body class="pb12 fadeIn animated">
+		<header class="ui-header clearfix w75 pl3 pr3 h8 f46  color8 bg-color-success t-c">
+			<div class="ui-header-l fl w5">
+				<a href="index.html" class="icon color8 iconfont icon-home_light"></a>
+			</div>
+			<div class="ui-header-c fl f30 w59">
+				实时监控
+			</div>
+			<div class="ui-header-r fr w5">
+				<i class="icon iconfont icon-phone"></i>
+			</div>
+		</header>
+		<!-- swiper -->
+		<section class="swiper-container h40">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+				<div class="swiper-slide"><img src='img/banner2.jpg' class="w75 h40" /></div>
+				<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</section>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				}
+			});
+		</script>
+		<style>
+			.swiper-button-next,
+			.swiper-button-prev {
+				/*swiper 默认图标适应性较差，使用rem单位规定左右按钮大小，图标大小*/
+				width: 0.3rem !important;
+				height: 0.5rem !important;
+				background-size: cover !important;
+				margin-top: -0.23rem !important;
+			}
+		</style>
+		<!--  -->
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+
+</html>

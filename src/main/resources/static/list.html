@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0,uc-fitscreen=yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>环境监测</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- miniMObile.css、js -->
+	<link rel="stylesheet" type="text/css" href="css/miniMobile.css" />
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/miniMobile.js"></script>
+	<!-- fonticon -->
+	<link rel="stylesheet" type="text/css" href="plugins/fonticon/iconfont.css" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+	<script  type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- animate.css -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+<script  type="text/javascript">
+	var interval3=setInterval(function(){
+	     fnSearch();
+	},12000);
+	function fnSearch(){
+	var Down = document.getElementById("progress");
+	var Down1 = document.getElementById("progress1");
+	var Down2 = document.getElementById("progress2");
+	var Down3 = document.getElementById("progress3");
+	var Down_p = document.getElementById("progress_p");
+	var Down_p1 = document.getElementById("progress_p1");
+	var Down_p2 = document.getElementById("progress_p2");
+	var Down_p3 = document.getElementById("progress_p3");
+		  $.ajax({
+	       type: "POST",
+            url: "/dust/monitoringdemo",
+            dataType: "json",
+            contentType : "application/json",
+            success: function (data) {
+            	Down.value = data.hum
+            	Down1.value = data.hum_tem
+            	Down2.value = data.hum_hundred
+            	Down3.value = data.noise
+            	Down_p.innerText = "PM2.5：（"+data.hum+"微克/立方米）"
+            	Down_p1.innerText = "PM10：（"+data.hum_tem+"微克/立方米）"
+            	Down_p2.innerText ="TSP：（"+data.hum_hundred+"微克/立方米）"
+            	Down_p3.innerText = "噪音：（"+data.noise+"dB）"
+            },
+            error: function (e) {
+                console.log(e)
+            }
+	    });
+	 }
+</script>
+<body class="fadeIn animated">
+	<header class="ui-header clearfix w75 h8 f46 pl3 pr3 color8 bg-color-success t-c o-h">
+		<div class="ui-header-l fl w5">
+			<a href="index.html" class="icon color8 iconfont icon-home_light"></a>
+		</div>
+		<div class="ui-header-c fl f30 w59">
+			环境监测
+		</div>
+		<div class="ui-header-r fr w5">
+			<i class="icon iconfont icon-phone"></i>
+		</div>
+	</header>
+	<!-- swiper -->
+	<section class="swiper-container h40">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+			<div class="swiper-slide"><img src='img/banner2.jpg' class="w75 h40" /></div>
+			<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+		</div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</section>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+	</script>
+	<style>
+		.swiper-button-next,
+		.swiper-button-prev {
+			/*swiper 默认图标适应性较差，使用rem单位规定左右按钮大小，图标大小*/
+			width: 0.3rem !important;
+			height: 0.5rem !important;
+			background-size: cover !important;
+			margin-top: -0.23rem !important;
+		}
+	</style>
+	<!--  -->
+	<div class="m3 color4 f32 progresslist">
+
+		<p  id="progress_p">PM2.5：（42.12微克/立方米）</p>
+		<progress id="progress" class="ui-progress" max="150" value="42.12"></progress>
+		<p id="progress_p1">PM10：（57.50微克/立方米）</p>
+		<progress id="progress1" class="ui-progress" max="150" value="57.50"></progress>
+		<p id="progress_p2">TSP：（89.56微克/立方米）</p>
+		<progress id="progress2" class="ui-progress" max="150" value="89.56"></progress>
+		<p id="progress_p3">噪音：（60dB）</p>
+		<progress id="progress3" class="ui-progress" max="150" value="60"></progress>
+	</div>
+	<style>
+		progress {
+			width: 100%;
+		}
+
+		.progresslist {
+			line-height: 1.5em;
+		}
+	</style>
+	<script type="text/javascript">
+		$(".ui-progress").eq(0).progressUi();
+		$(".ui-progress").eq(1).progressUi({
+			skin: "primary"
+		});
+		$(".ui-progress").eq(2).progressUi({
+			skin: "success"
+		});
+		$(".ui-progress").eq(3).progressUi({
+			skin: "info"
+		});
+		$(".ui-progress").eq(4).progressUi({
+			skin: "warning"
+		});
+		$(".ui-progress").eq(5).progressUi({
+			skin: "danger"
+		});
+	</script>
+	<!-- 历史查询 -->
+	<div class="m3 f28 clearfix">
+		<div class="btn-select w34 fl">
+			<p style="font-size: .28rem; line-height: .8rem;  text-align: right; padding-right: 5px; color: #666;">
+			历史查询：
+			</p>
+		</div>
+		<div class="btn-select w34 fl">
+			<font class="btn-select-content h8 w28 radius5 btn btn-primary">
+				<span>请选择时间</span>&nbsp;&nbsp;
+				<i class="icon iconfont icon-unfold"></i>
+			</font>
+			<ul class="btn-select-list radio5 bg-color-primary">
+				<li>
+					<span class="pl3">最近一个星期</span>
+				</li>
+				<li>
+					<span class="pl3">最近一个月</span>
+				</li>
+				<li>
+					<span class="pl3">最近一年</span>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			//下拉组件操作
+			$(".btn-select .btn-select-content").tap(function() {
+				$(this).siblings(".btn-select-list").toggle();
+			});
+			$(".btn-select .btn-select-list li").tap(function() {
+				$(this).parents(".btn-select").find(".btn-select-content span").text($(this).text());
+				$(this).parent(".btn-select-list").hide();
+			});
+		</script>
+		<style>
+			.border{
+				margin-top: 30px;
+			}
+		</style>
+		<div class="tabBox m3 f28">
+			<section class="swiper-container h50">
+				
+				<div class="swiper-wrapper">
+					<div class="swiper-slide bg-color5 p4">内容选项卡3</div>
+				</div>
+			</section>
+		</div>
+		<!-- 底部导航 -->
+		<nav class="demo-bottomNav mt6 w75 h12 pt1 t-c f28 bg-color8 o-h clearfix">
+			<div class="w15 fl">
+				<a href="index.html">
+					<i class="f46 icon iconfont icon-home_light"></i>
+					<p>首页</p>
+				</a>
+			</div>
+			<div class="w15 fl">
+				<a href="grid.html">
+					<i class="f46 icon iconfont icon-comment"></i>
+					<p>告警</p>
+				</a>
+			</div>
+			<div class="w15 fl">
+				<a href="list.html">
+					<i class="f46 icon iconfont icon-rank"></i>
+					<p>扬尘</p>
+				</a>
+			</div>
+			<div class="w15 fl">
+				<a href="comment.html">
+					<i class="f46 icon iconfont icon-list"></i>
+					<p>视频</p>
+				</a>
+			</div>
+			<div class="w15 fl">
+				<a href="my.html">
+					<i class="f46 icon iconfont icon-servicefill"></i>
+					<p>其他</p>
+				</a>
+			</div>
+		</nav>
+		<style type="text/css">
+			.demo-bottomNav {
+				line-height: 1.8em;
+				border-top: 1px solid #F1F1F1;
+			}
+
+			.demo-bottomNav a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+</body>
+
+</html>

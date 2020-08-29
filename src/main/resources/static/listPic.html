@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0,uc-fitscreen=yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>实时监控</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- miniMObile.css、js -->
+	<link rel="stylesheet" type="text/css" href="css/miniMobile.css" />
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/miniMobile.js"></script>
+	<!-- fonticon -->
+	<link rel="stylesheet" type="text/css" href="plugins/fonticon/iconfont.css" />
+	<!-- animate.css -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="plugins/photoswipe/photoswipe.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/photoswipe/default-skin/default-skin.css" />
+	<!-- photoswipe -->
+	<script src="plugins/photoswipe/photoswipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="plugins/photoswipe/photoswipe-ui-default.js" type="text/javascript" charset="utf-8"></script>
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<script>
+		document.write("<link type='text/css' href='css/demo.css?version=" + new Date().getTime() + "' rel='stylesheet' />");
+	</script>
+</head>
+<script src="lib/jquery.js"></script>
+<script src="lib/jquery-ui.js"></script>
+</head>
+
+<body class="fadeIn animated">
+	<header class="ui-header clearfix w75 h8 f46 pl3 pr3 color8 bg-color-success t-c o-h">
+		<div class="ui-header-l fl w5">
+			<a href="comment.html" class="icon color8 iconfont icon-home_light"></a>
+		</div>
+		<div class="ui-header-c fl f30 w59">
+			实时监控
+		</div>
+		<div class="ui-header-r fr w5">
+			<i class="icon iconfont icon-phone"></i>
+		</div>
+	</header>
+
+	<!-- swiper -->
+	<section class="swiper-container h40">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+			<div class="swiper-slide"><img src='img/banner2.jpg' class="w75 h40" /></div>
+			<div class="swiper-slide"><img src='img/banner3.jpg' class="w75 h40" /></div>
+		</div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</section>
+	<!--  -->
+	<div class="t-c f28 p6 color4 bg-color6">
+		<h2 class=" f46" style="color: #666;">
+			视频实时监控
+		</h2>
+		<p>对当前工地进行实时监控。</p>
+	</div>
+	<!-- 导航 -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+	</script>
+	<style>
+		.swiper-button-next,
+		.swiper-button-prev {
+			/*swiper 默认图标适应性较差，使用rem单位规定左右按钮大小，图标大小*/
+			width: 0.3rem !important;
+			height: 0.5rem !important;
+			background-size: cover !important;
+			margin-top: -0.23rem !important;
+		}
+	</style>
+
+	<!--  -->
+	<div class="tabBox m3 f28">
+		<section class="swiper-container h60">
+			<div class="btn-select w34 fl">
+				<font class="btn-select-content h8 w28 radius5 btn ">
+					<span>选择摄像头</span>&nbsp;&nbsp;
+					<i class="icon iconfont icon-unfold"></i>
+				</font>
+				<ul style=" z-index:9999" class="btn-select-list disable radio5 bg-color-primary tabindexList">
+					<li class="p2 pl4 pr4 bg-color4   color8">
+						<span class="pl3">制高点</span>
+					</li>
+					<li class="p2 pl4 pr4 bg-color4   color8">
+						<span class="pl3">物料区</span>
+					</li>
+					<li class="p2 pl4 pr4 bg-color4 color8">
+						<span class="pl3">大门口</span>
+					</li>
+				</ul>
+			</div>
+
+			<script type="text/javascript">
+				//下拉组件操作
+				$(".btn-select .btn-select-content").tap(function () {
+					$(this).siblings(".btn-select-list").toggle();
+				});
+				$(".btn-select .btn-select-list li").tap(function () {
+					$(this).parents(".btn-select").find(".btn-select-content span").text($(this).text());
+					$(this).parent(".btn-select-list").hide();
+				});
+			</script>
+
+			<div class="swiper-wrapper">
+				<div class="swiper-slide bg-color5 p4">制高点摄像头<br />
+					<iframe src="https://nvr.liveqing.com:10810/play.html?channel=2&iframe=yes&aspect=280x260" width="280" height="260" allowfullscreen allow="autoplay"></iframe>
+			</div>
+			<div class="swiper-slide bg-color5 p4">内容选项卡2</div>
+			<div class="swiper-slide bg-color5 p4">内容选项卡3</div>
+		</section>
+	</div>
+	<style>
+		.tabindexList span {
+			display: inline-block;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			on: {
+				slideChangeTransitionStart: function () {
+					$(".tabindexList li").removeClass("bg-color5").eq(this.activeIndex).addClass("bg-color5");
+				}
+			}
+		});
+		$(".tabindexList li").click(function () {
+			var index = $(this).index();
+			$(".tabindexList li").removeClass("bg-color5").eq(index).addClass("bg-color5");
+			swiper.slideTo(index, 300, false);
+		})
+	</script>
+	<!-- 底部导航 -->
+	<nav class="demo-bottomNav mt6 w75 h12 pt1 t-c f28 bg-color8 o-h clearfix">
+		<div class="w15 fl">
+			<a href="index.html">
+				<i class="f46 icon iconfont icon-home_light"></i>
+				<p>首页</p>
+			</a>
+		</div>
+		<div class="w15 fl">
+			<a href="grid.html">
+				<i class="f46 icon iconfont icon-comment"></i>
+				<p>告警</p>
+			</a>
+		</div>
+		<div class="w15 fl">
+			<a href="list.html">
+				<i class="f46 icon iconfont icon-rank"></i>
+				<p>扬尘</p>
+			</a>
+		</div>
+		<div class="w15 fl">
+			<a href="comment.html">
+				<i class="f46 icon iconfont icon-list"></i>
+				<p>视频</p>
+			</a>
+		</div>
+		<div class="w15 fl">
+			<a href="my.html">
+				<i class="f46 icon iconfont icon-servicefill"></i>
+				<p>其他</p>
+			</a>
+		</div>
+	</nav>
+	<style type="text/css">
+		.demo-bottomNav {
+			line-height: 1.8em;
+			border-top: 1px solid #F1F1F1;
+		}
+
+		.demo-bottomNav a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="module/foundation.js"></script>
+	<script src="module/WebVideoCtrl.js"></script>
+	<script src="module/modifyUI.js"></script>
+	<script src="module/demo.js"></script>
+</body>
+
+</html>

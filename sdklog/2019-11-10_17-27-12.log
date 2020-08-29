@@ -1,0 +1,31 @@
+Begin Time:2019-11-10 17:27:12.113
+[2019-11-10 17:27:12.113][P:25168/T:34324][AVNetSDKMgr.cpp:358][Info][0] Load avnetsdk library dynamically
+[2019-11-10 17:27:12.117][P:25168/T:34324][AVNetSDKMgr.cpp:382][Info][0] avnetsdk module handle: 0000000027770000
+
+[2019-11-10 17:27:12.118][P:25168/T:34324][AVNetSDKMgr.cpp:702][Info][0] Load configsdk dynamically
+[2019-11-10 17:27:12.121][P:25168/T:34324][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000000CF0050, dwUser=0000000000000000].
+[2019-11-10 17:27:12.121][P:25168/T:34324][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-11-10 17:27:12.123][P:25168/T:34324][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-11-10 17:27:12.123][P:25168/T:34324][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-11-10 17:27:12.123][P:25168/T:34324][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-11-10 17:27:12.123][P:25168/T:34324][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-11-10 17:27:12.124][P:25168/T:34324][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.208, port=37777, SpeCap=0, lpDeviceInfo=000000002281C4A0.]
+[2019-11-10 17:27:22.125][P:25168/T:34324][TPTCPClient.cpp:378][Error][90010007] Connect host failed, ip:192.168.0.208
+[2019-11-10 17:27:22.125][P:25168/T:34324][dhdevprob.cpp:2226][Error][8000040a] Failed to create main connection
+[2019-11-10 17:27:22.125][P:25168/T:34324][Manager.cpp:7549][Error][90010002] device is NULL
+[2019-11-10 17:27:22.125][P:25168/T:34324][Manager.cpp:7646][Error][90010002] Login device failed, errorcode:9!
+[2019-11-10 17:27:22.125][P:25168/T:34324][dhnetsdk.cpp:609][Error][90010002] Login failed, ip:192.168.0.208, port:37777, specCap:0!
+[2019-11-10 17:27:22.125][P:25168/T:34324][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2019-11-10 17:27:22.128][P:25168/T:34324][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-11-10 17:27:22.128][P:25168/T:34324][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]
+[2019-11-10 17:27:22.128][P:25168/T:34324][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-11-10 17:27:22.128][P:25168/T:34324][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]
+[2019-11-10 17:27:40.671][P:25168/T:37724][dhnetsdk.cpp:132][Info][0] Enter CLIENT_InitEx:[cbDisConnect=0000000000CF0010, dwUser=0000000000000000, lpInitParam=0000000000000000].
+[2019-11-10 17:27:40.671][P:25168/T:37724][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 0000000027770000
+
+[2019-11-10 17:27:40.671][P:25168/T:37724][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-11-10 17:27:40.671][P:25168/T:37724][dhnetsdk.cpp:132][Info][0] Enter CLIENT_InitEx:[cbDisConnect=0000000000CF0010, dwUser=0000000000000000, lpInitParam=0000000000000000].
+[2019-11-10 17:27:40.671][P:25168/T:37724][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 0000000027770000
+
+[2019-11-10 17:27:40.671][P:25168/T:37724][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-11-10 17:27:40.672][P:25168/T:37724][Manager.cpp:12322][Info][0] -------------------Log file reset, new log file:C:\Users\EDZ\Documents\Tencent Files\843268483\FileRecv\hyzhgd\hyzhgd\.\sdklog\2019-11-10_17-27-40.log-log number:10-log size:10240------------------

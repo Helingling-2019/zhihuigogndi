@@ -1,0 +1,28 @@
+Begin Time:2019-10-24 12:00:27.172
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000002200050, dwUser=0000000000000000].
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-10-24 12:00:27.173][P:4136/T:2672][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.208, port=37777, SpeCap=0, lpDeviceInfo=0000000023E7EE70.]
+[2019-10-24 12:00:33.787][P:4136/T:2664][TPTCPClient.cpp:378][Error][90010007] Connect host failed, ip:192.168.0.208
+[2019-10-24 12:00:33.787][P:4136/T:2664][dhdevprob.cpp:2226][Error][8000040a] Failed to create main connection
+[2019-10-24 12:00:33.787][P:4136/T:2664][Manager.cpp:7549][Error][90010002] device is NULL
+[2019-10-24 12:00:33.787][P:4136/T:2664][Manager.cpp:7646][Error][90010002] Login device failed, errorcode:9!
+[2019-10-24 12:00:33.787][P:4136/T:2664][dhnetsdk.cpp:609][Error][90010002] Login failed, ip:192.168.0.208, port:37777, specCap:0!
+[2019-10-24 12:00:33.787][P:4136/T:2664][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2019-10-24 12:00:33.831][P:4136/T:2664][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-10-24 12:00:33.831][P:4136/T:2664][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]
+[2019-10-24 12:00:33.831][P:4136/T:2664][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-10-24 12:00:33.831][P:4136/T:2664][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]
+[2019-10-24 12:00:37.174][P:4136/T:2672][TPTCPClient.cpp:378][Error][90010007] Connect host failed, ip:192.168.0.208
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhdevprob.cpp:2226][Error][8000040a] Failed to create main connection
+[2019-10-24 12:00:37.174][P:4136/T:2672][Manager.cpp:7549][Error][90010002] device is NULL
+[2019-10-24 12:00:37.174][P:4136/T:2672][Manager.cpp:7646][Error][90010002] Login device failed, errorcode:9!
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:609][Error][90010002] Login failed, ip:192.168.0.208, port:37777, specCap:0!
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:6505][Info][0] Enter CLIENT_GetLastError.
+[2019-10-24 12:00:37.174][P:4136/T:2672][dhnetsdk.cpp:6508][Info][0] Leave CLIENT_GetLastError.[Error code=8000006b.]

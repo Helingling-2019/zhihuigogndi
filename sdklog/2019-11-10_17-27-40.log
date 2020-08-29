@@ -1,0 +1,60 @@
+Begin Time:2019-11-10 17:27:40.673
+[2019-11-10 17:27:40.673][P:25168/T:37724][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000000CF0050, dwUser=0000000000000000].
+[2019-11-10 17:27:40.673][P:25168/T:37724][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-11-10 17:27:40.673][P:25168/T:37724][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-11-10 17:27:40.673][P:25168/T:37724][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-11-10 17:27:40.674][P:25168/T:37724][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-11-10 17:27:40.675][P:25168/T:37724][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-11-10 17:27:40.675][P:25168/T:37724][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.208, port=37777, SpeCap=0, lpDeviceInfo=000000002281C4A0.]
+[2019-11-10 17:27:40.944][P:25168/T:37724][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=578147088.]
+[2019-11-10 17:27:40.945][P:25168/T:37724][dhnetsdk.cpp:1024][Info][0] Enter CLIENT_RealPlayEx. [lLoginID=578147088. nChannelID=0. rType=0]
+[2019-11-10 17:27:41.024][P:25168/T:37724][DevConfigEx.cpp:9721][Info][0] IN SetupSession PORT=0 and PORT: 37777
+[2019-11-10 17:27:41.081][P:25168/T:37724][dhnetsdk.cpp:1085][Info][0] Leave CLIENT_RealPlayEx. [ret=578197104]
+[2019-11-10 17:27:41.082][P:25168/T:37724][dhnetsdk.cpp:1099][Info][0] Enter CLIENT_StartRealPlay. [lLoginID=578147088. nChannelID=0. hWnd=0000000000000000, rType=0, cbRealData=0000000000000000, cbDisconnect=0000000000000000, dwUser=0000000000000000, dwWaitTime=0.]
+[2019-11-10 17:27:41.116][P:25168/T:37724][DevConfigEx.cpp:9721][Info][0] IN SetupSession PORT=0 and PORT: 37777
+[2019-11-10 17:27:41.170][P:25168/T:37724][dhnetsdk.cpp:1152][Info][0] Leave CLIENT_StartRealPlay. [ret=723190144]
+[2019-11-10 17:34:04.588][P:25168/T:42076][TPIOCPMultiplexer.cpp:114][Error][90002001] receive data result, GetQueuedCompletionStatus error:1236
+[2019-11-10 17:34:04.589][P:25168/T:18712][TPIOCPMultiplexer.cpp:114][Error][90002001] receive data result, GetQueuedCompletionStatus error:1236
+[2019-11-10 17:34:04.589][P:25168/T:38552][TPIOCPMultiplexer.cpp:114][Error][90002001] receive data result, GetQueuedCompletionStatus error:1236
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2940, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:08.022][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2940, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:19.033][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2940, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:30.043][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2940, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:40.052][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2940, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:34:51.063][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:34:58.070][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 17:35:01.075][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:35:01.075][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2960, PerIoSend:000000002B1FF190
+[2019-11-10 17:35:01.075][P:25168/T:42644][TPObject.cpp:155][Error][90002010] WSASend error, ret:-1, err:10054
+[2019-11-10 17:35:01.075][P:25168/T:42644][TPTCPClient.cpp:462][Error][90002008] Failed to send data, socket:2980, PerIoSend:000000002B1FF190
+[2019-11-10 17:35:03.076][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 17:35:03.076][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 18:56:39.393][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 18:56:39.393][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 18:56:39.393][P:25168/T:42644][TcpSocket.cpp:818][Error][90010017] Heartbeat failed, second:60
+[2019-11-10 18:56:49.431][P:25168/T:42076][TPIOCPMultiplexer.cpp:114][Error][90002001] receive data result, GetQueuedCompletionStatus error:1236
+[2019-11-10 18:56:49.432][P:25168/T:38552][TPIOCPMultiplexer.cpp:114][Error][90002001] receive data result, GetQueuedCompletionStatus error:1236

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnhy99999.zhgd.dao.DustMonitoringDao">
+	
+
+	<select id="getDustMonitorings" parameterType="list" resultType="com.hnhy99999.zhgd.mapper.DustMonitoring">
+        SELECT * FROM ren_dust where id =#{id}
+    </select>
+   <insert id="addDustMon" parameterType="com.hnhy99999.zhgd.mapper.DustMonitoring">
+    	insert into ren_dust (device_id,node,hum,hum_tem,hum_hundred,noise)
+		values (#{device_id},#{node},#{hum},#{hum_tem},#{hum_hundred},#{noise})
+    </insert>
+     <insert id="addWarning" parameterType="com.hnhy99999.zhgd.mapper.DustWarning">
+    	insert into call_the_police (name,value,content,ctime)
+		values (#{name},#{value},#{content},#{ctime})
+    </insert>
+</mapper>

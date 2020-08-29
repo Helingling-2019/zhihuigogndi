@@ -1,0 +1,19 @@
+Begin Time:2019-10-23 11:58:13.344
+[2019-10-23 11:58:13.344][P:12104/T:11852][AVNetSDKMgr.cpp:358][Info][0] Load avnetsdk library dynamically
+[2019-10-23 11:58:13.349][P:12104/T:11852][AVNetSDKMgr.cpp:382][Info][0] avnetsdk module handle: 000000002D950000
+
+[2019-10-23 11:58:13.349][P:12104/T:11852][AVNetSDKMgr.cpp:702][Info][0] Load configsdk dynamically
+[2019-10-23 11:58:13.353][P:12104/T:11852][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000001F90050, dwUser=0000000000000000].
+[2019-10-23 11:58:13.353][P:12104/T:11852][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-10-23 11:58:13.354][P:12104/T:11852][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-10-23 11:58:13.354][P:12104/T:11852][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-10-23 11:58:13.354][P:12104/T:11852][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-10-23 11:58:13.354][P:12104/T:11852][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-10-23 11:58:13.355][P:12104/T:11852][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.208, port=37777, SpeCap=0, lpDeviceInfo=0000000025DDEE20.]
+[2019-10-23 11:58:13.606][P:12104/T:11852][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=521621776.]
+[2019-10-23 11:58:13.606][P:12104/T:11852][dhnetsdk.cpp:1024][Info][0] Enter CLIENT_RealPlayEx. [lLoginID=521621776. nChannelID=0. rType=0]
+[2019-10-23 11:58:13.691][P:12104/T:11852][DevConfigEx.cpp:9721][Info][0] IN SetupSession PORT=0 and PORT: 37777
+[2019-10-23 11:58:13.733][P:12104/T:11852][dhnetsdk.cpp:1085][Info][0] Leave CLIENT_RealPlayEx. [ret=837615984]
+[2019-10-23 11:58:13.733][P:12104/T:11852][dhnetsdk.cpp:1099][Info][0] Enter CLIENT_StartRealPlay. [lLoginID=521621776. nChannelID=0. hWnd=0000000000000000, rType=0, cbRealData=0000000000000000, cbDisconnect=0000000000000000, dwUser=0000000000000000, dwWaitTime=0.]
+[2019-10-23 11:58:13.768][P:12104/T:11852][DevConfigEx.cpp:9721][Info][0] IN SetupSession PORT=0 and PORT: 37777
+[2019-10-23 11:58:13.905][P:12104/T:11852][dhnetsdk.cpp:1152][Info][0] Leave CLIENT_StartRealPlay. [ret=837618544]
